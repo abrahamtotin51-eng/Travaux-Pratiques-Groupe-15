@@ -1,1 +1,29 @@
+FONCTIONS_UTILISEES
+  FONCTION monnaieRendue( )
+    VARIABLES_FONCTION
+      a EST_DU_TYPE NOMBRE
+      b EST_DU_TYPE NOMBRE
+      c EST_DU_TYPE NOMBRE
+    DEBUT_FONCTION
+    AFFICHER* "Bienvenu chers cliens"
+    a PREND_LA_VALEUR 5000
+    AFFICHER* "Veuillez entrer le motant de votre achat"
+    LIRE b
+    TANT_QUE (b<0 OU b>5000) FAIRE
+      DEBUT_TANT_QUE
+      AFFICHER* "Veuillez entrer une valeure correcte"
+      LIRE b
+      FIN_TANT_QUE
+    c PREND_LA_VALEUR a-b
+    AFFICHER "Achat éffectué: "
+    AFFICHER b
+    AFFICHER* "FCFA"
+    AFFICHER "Monnaie rendue: "
+    AFFICHER c
+    AFFICHER "FCFA"
+    FIN_FONCTION
+VARIABLES
+DEBUT_ALGORITHME
+  APPELER_FONCTION monnaieRendue()
+FIN_ALGORITHME
 
